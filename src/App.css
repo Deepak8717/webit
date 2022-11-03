@@ -91,7 +91,7 @@
 .container .hero {
   position: absolute;
   top: 241px;
-  left: 15%;
+  left: 10%;
   width: 100%;
   max-width: 1144px;
   height: 891px;
@@ -136,13 +136,13 @@
   padding: 50px;
   text-align: center;
 }
-.measurement-container .heading-container .heading {
+.measurement-container .heading {
   font: normal normal 900 58px/60px "Gilroy Semibold";
   letter-spacing: 0px;
   color: #00ff00;
   text-transform: uppercase;
 }
-.measurement-container .heading-container .paragraph {
+.measurement-container .paragraph {
   font: normal normal medium 16px/55px "Gilroy Medium";
 }
 
@@ -152,7 +152,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.measurement-container .grid-container .grid-item {
+.measurement-container .grid-item {
   width: 400px;
   height: 200px;
   margin: 0 auto;
@@ -160,63 +160,109 @@
   align-items: center;
   justify-content: center;
 }
-.measurement-container .grid-container .grid-item .icon {
+.measurement-container .icon {
   width: 70px;
   height: 70px;
   margin: 10px;
 }
-.measurement-container .grid-container .grid-item .text {
+.measurement-container .text {
   width: 50%;
   height: 50px;
   font: normal normal 600 20px/25px "Gilroy Regular";
   text-transform: uppercase;
   color: #fff;
 }
-.measurement-container .grid-container .grid-item .icon.transparency {
+.measurement-container .icon.transparency {
   background: transparent url("img/Group\ 146831.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
 }
-.measurement-container .grid-container .grid-item .icon.project-status {
+.measurement-container .icon.project-status {
   background: transparent url("img/Group\ 146822.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
 }
-.measurement-container .grid-container .grid-item .icon.communication {
+.measurement-container .icon.communication {
   background: transparent url("img/Group\ 146826.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
 }
 
-.measurement-container .grid-container .grid-item .icon.agile {
+.measurement-container .icon.agile {
   background: transparent url("img/Group\ 146868.svg") 0% 0% no-repeat
     padding-box;
   background-position: 0px -10px;
 }
-.measurement-container .grid-container .grid-item .icon.collaboration {
+.measurement-container .icon.collaboration {
   background: transparent url("img/Group\ 146836.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
 }
-.measurement-container .grid-container .grid-item .icon.collaboration {
-  background: transparent url("img/Group\ 146836.svg") 0% 0% no-repeat
-    padding-box;
-  background-position: center;
-}
-.measurement-container .grid-container .grid-item .icon.innovation {
+.measurement-container .icon.innovation {
   background: transparent url("img/Group\ 146841.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
 }
-.measurement-container .grid-container .grid-item .icon.client-involvement {
+.measurement-container .icon.client-involvement {
   background: transparent url("img/Group\ 146866.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
 }
-.measurement-container .grid-container .grid-item .icon.dedicated-team {
+.measurement-container .icon.dedicated-team {
   background: transparent url("img/Group\ 146867.svg") 0% 0% no-repeat
     padding-box;
   background-position: center;
+}
+
+/* Industries */
+.industries-container {
+  margin-top: 0px;
+  background: #ededed 0% 0% no-repeat padding-box;
+}
+.industries-container .heading-container {
+  width: 650px;
+  height: 135px;
+  text-align: center;
+}
+.industries-container .heading {
+  color: #000000;
+}
+.industries-container .text {
+  color: #000000;
+}
+.industries-container .media {
+  background: transparent url("img/Group\ 146891.svg") 0% 0% no-repeat
+    padding-box;
+}
+.industries-container .healthcare {
+  background: transparent url("img/Group\ 146905.svg") 0% 0% no-repeat
+    padding-box;
+}
+.industries-container .hospitality {
+  background: transparent url("img/Group\ 146909.svg") 0% 0% no-repeat
+    padding-box;
+}
+.industries-container .retail {
+  background: transparent url("img/Group\ 146909.svg") 0% 0% no-repeat
+    padding-box;
+}
+.industries-container .learning {
+  background: transparent url("img/Group\ 146919.svg") 0% 0% no-repeat
+    padding-box;
+}
+.industries-container .travel {
+  background: transparent url("img/travel.svg") 0% 0% no-repeat padding-box;
+}
+.industries-container .mobile {
+  background: transparent url("img/mobile.svg") 0% 0% no-repeat padding-box;
+}
+.industries-container .it {
+  background: transparent url("img/Group\ 146929.svg") 0% 0% no-repeat
+    padding-box;
+}
+.industries-container .agritech {
+  background: transparent url("img/Group\ 146929.svg") 0% 0% no-repeat
+    padding-box;
 }
 @media (min-width: 1470px) {
   .navbar .brand-menu-container .brand-container {
@@ -252,7 +298,9 @@
     height: 100%;
     width: 85%;
     top: 17%;
+    left: 15%;
   }
+
   .container .brand-headline {
     font: normal normal 900 63px/80px "Gilroy Extra-bold";
     width: 80%;
@@ -272,7 +320,7 @@
   .measurement-container .grid-container {
     grid-template-columns: auto auto;
   }
-  .measurement-container .grid-container .grid-item {
+  .measurement-container .grid-item {
     height: 150px;
   }
 }
@@ -295,11 +343,14 @@
   .measurement-container .heading-container {
     width: 312px;
   }
-  .measurement-container .heading-container .heading {
+  .measurement-container .heading {
     font: normal normal 900 38px/60px "Gilroy Semibold";
   }
-  .measurement-container .grid-container .grid-item {
+  .measurement-container .grid-item {
     width: 300px;
+  }
+  .industries-container .heading-container {
+    width: 438px;
   }
 }
 @media (max-width: 768px) {
@@ -329,33 +380,33 @@
     font: normal normal bold 20px/20px "Gilroy Semibold";
     top: 47%;
   }
-  .measurement-container .grid-container .grid-item .icon {
+  .measurement-container .grid-item {
+    width: 260px;
+  }
+  .measurement-container .icon {
     width: 50px;
     height: 49px;
     margin: 5px;
   }
-  .measurement-container .grid-container .grid-item .text {
+  .measurement-container .text {
     width: 60%;
     height: 60px;
     font: normal normal 600 18px/25px "Gilroy Regular";
-  }
-  .measurement-container .grid-container .grid-item {
-    width: 260px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    height: 768px;
+    height: 650px;
     border-radius: 0px 0px 0px 285px;
   }
   .container .hero {
-    height: 704px;
+    height: 600px;
     width: 85%;
-    top: 16%;
+    top: 17%;
   }
   .container .brand-headline {
-    font: normal normal 900 25px/39px "Gilroy Extra-bold";
+    font: normal normal 900 25px/30px "Gilroy Extra-bold";
     top: 39%;
     left: 14%;
     width: 85%;
@@ -368,21 +419,24 @@
   .measurement-container .heading-container {
     width: 247px;
   }
-  .measurement-container .heading-container .heading {
+  .measurement-container .heading {
     font: normal normal 900 30px/45px "Gilroy Semibold";
   }
-  .measurement-container .grid-container .grid-item {
+  .measurement-container .grid-item {
     width: 100%;
     height: 130px;
     flex-direction: column;
   }
-  .measurement-container .grid-container .grid-item .icon {
+  .measurement-container .icon {
     width: 45px;
     height: 45px;
   }
-  .measurement-container .grid-container .grid-item .text {
+  .measurement-container .text {
     width: 100%;
     font: normal normal 600 16px/25px "Gilroy Regular";
     text-align: center;
+  }
+  .industries-container .heading {
+    font: normal normal 900 22px/45px "Gilroy Semibold";
   }
 }
