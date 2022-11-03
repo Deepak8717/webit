@@ -1,38 +1,388 @@
-.App {
+@font-face {
+  font-family: "Gilroy Extra-bold";
+  src: url(fonts/Gilroy-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy bold";
+  src: url(fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Black";
+  src: url(fonts/Gilroy-Black.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url(fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy Semibold";
+  src: url(fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url(fonts/Gilroy-Medium.ttf);
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+.navbar .brand-menu-container {
+  display: flex;
+  align-items: center;
+}
+.navbar .brand-menu-container .brand-container {
+  text-transform: uppercase;
+  width: 200px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar .brand-menu-container .brand-container .brand-main {
+  font: normal normal 900 40px/30px "Gilroy bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+.navbar .brand-menu-container .brand-container .brand-submain {
+  font: normal normal 30px/30px "Gilroy Medium";
+}
+.navbar .menu {
+  height: 22px;
+  font: normal normal 600 18px/22px "Gilroy Regular";
+}
+.navbar .menu li {
+  display: inline;
+  margin: 0 30px;
+}
+.navbar .menu.menu-action {
+  height: 100%;
+}
+.navbar .menu.menu-action .btn {
+  width: 219px;
+  height: 49px;
+  font: normal normal 600 18px/22px "Gilroy Regular";
+  letter-spacing: 0px;
+  box-shadow: 0px 4px 20px #00000029;
+  border-radius: 33px;
+  border: none;
+  margin: 10px;
+}
+.navbar .menu.menu-action .schedule-a-call {
+  background: #000000 0% 0% no-repeat padding-box;
+  color: #fff;
+}
+.navbar .hamburger-menu {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* hero */
+.container {
+  position: relative;
+  width: 100%;
+  height: 1078px;
+  background: #00ff00 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 0px 531px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .hero {
+  position: absolute;
+  top: 241px;
+  left: 15%;
+  width: 100%;
+  max-width: 1144px;
+  height: 891px;
+  background: transparent url("img/Group\ 82.svg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.container .brand-headline {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 85%;
+  text-align: left;
+  font: normal normal 900 96px/115px "Gilroy Extra-bold";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.container .brand-tagline {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 85%;
+  text-align: left;
+  font: normal normal bold 35px/60px "Gilroy Semibold";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+/* Measurement */
+.measurement-container {
+  margin-top: 100px;
+  width: 100%;
+  height: 950px;
+  background: #000000 0% 0% no-repeat padding-box;
+  color: #fff;
+}
+.measurement-container .heading-container {
+  width: 488px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+.measurement-container .heading-container .heading {
+  font: normal normal 900 58px/60px "Gilroy Semibold";
+  letter-spacing: 0px;
+  color: #00ff00;
+  text-transform: uppercase;
+}
+.measurement-container .heading-container .paragraph {
+  font: normal normal medium 16px/55px "Gilroy Medium";
+}
+
+.measurement-container .grid-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.measurement-container .grid-container .grid-item {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.measurement-container .grid-container .grid-item .icon {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.measurement-container .grid-container .grid-item .text {
+  width: 50%;
+  height: 50px;
+  font: normal normal 600 20px/25px "Gilroy Regular";
+  text-transform: uppercase;
+  color: #fff;
+}
+.measurement-container .grid-container .grid-item .icon.transparency {
+  background: transparent url("img/Group\ 146831.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+.measurement-container .grid-container .grid-item .icon.project-status {
+  background: transparent url("img/Group\ 146822.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+.measurement-container .grid-container .grid-item .icon.communication {
+  background: transparent url("img/Group\ 146826.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.measurement-container .grid-container .grid-item .icon.agile {
+  background: transparent url("img/Group\ 146868.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: 0px -10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.measurement-container .grid-container .grid-item .icon.collaboration {
+  background: transparent url("img/Group\ 146836.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+.measurement-container .grid-container .grid-item .icon.collaboration {
+  background: transparent url("img/Group\ 146836.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+.measurement-container .grid-container .grid-item .icon.innovation {
+  background: transparent url("img/Group\ 146841.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+.measurement-container .grid-container .grid-item .icon.client-involvement {
+  background: transparent url("img/Group\ 146866.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+.measurement-container .grid-container .grid-item .icon.dedicated-team {
+  background: transparent url("img/Group\ 146867.svg") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+}
+@media (min-width: 1470px) {
+  .navbar .brand-menu-container .brand-container {
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .container .brand-headline {
+    width: 100%;
+    font: normal normal 900 110px/120px "Gilroy Extra-bold";
+  }
+  .container .brand-tagline {
+    width: 100%;
+    font: normal normal bold 40px/80px "Gilroy Semibold";
+  }
+}
+@media (max-width: 1280px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+  .navbar .brand-menu-container .brand-container .brand-main {
+    font: normal normal 900 30px/25px "Gilroy bold";
+  }
+  .navbar .brand-menu-container .brand-container .brand-submain {
+    font: normal normal 25px/30px "Gilroy Medium";
+  }
+  .container {
+    height: 960px;
+    border-radius: 0px 0px 0px 480px;
+  }
+  .navbar .menu.menu-action {
+    display: none;
+  }
+  .container .hero {
+    height: 100%;
+    width: 85%;
+    top: 17%;
+  }
+  .container .brand-headline {
+    font: normal normal 900 63px/80px "Gilroy Extra-bold";
+    width: 80%;
+    top: 30%;
+    left: 20%;
+  }
+  .container .brand-tagline {
+    font: normal normal bold 25px/20px "Gilroy Semibold";
+    width: 79%;
+    top: 50%;
+    left: 20%;
+  }
+  .navbar .hamburger-menu {
+    display: block;
+    font: normal normal 600 30px/22px "Gilroy Regular";
+  }
+  .measurement-container .grid-container {
+    grid-template-columns: auto auto;
+  }
+  .measurement-container .grid-container .grid-item {
+    height: 150px;
+  }
+}
+@media (max-width: 950px) {
+  .navbar .menu li {
+    margin: 0 15px;
+  }
+
+  .container .hero {
+    height: 766px;
+    width: 85%;
+    top: 21%;
+  }
+  .container .brand-headline {
+    font: normal normal 900 52px/60px "Gilroy Extra-bold";
+  }
+  .container .brand-tagline {
+    font: normal normal bold 20px/0px "Gilroy Semibold";
+  }
+  .measurement-container .heading-container {
+    width: 312px;
+  }
+  .measurement-container .heading-container .heading {
+    font: normal normal 900 38px/60px "Gilroy Semibold";
+  }
+  .measurement-container .grid-container .grid-item {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    height: 891px;
+    border-radius: 0px 0px 0px 344px;
+  }
+  .navbar .brand-menu-container .brand-container {
+    width: 100%;
+  }
+  .navbar {
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .container .hero {
+    height: 704px;
+    width: 85%;
+    top: 21%;
+  }
+  .container .brand-headline {
+    font: normal normal 900 39px/53px "Gilroy Extra-bold";
+  }
+  .container .brand-tagline {
+    font: normal normal bold 20px/20px "Gilroy Semibold";
+    top: 47%;
+  }
+  .measurement-container .grid-container .grid-item .icon {
+    width: 50px;
+    height: 49px;
+    margin: 5px;
+  }
+  .measurement-container .grid-container .grid-item .text {
+    width: 60%;
+    height: 60px;
+    font: normal normal 600 18px/25px "Gilroy Regular";
+  }
+  .measurement-container .grid-container .grid-item {
+    width: 260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    height: 768px;
+    border-radius: 0px 0px 0px 285px;
+  }
+  .container .hero {
+    height: 704px;
+    width: 85%;
+    top: 16%;
+  }
+  .container .brand-headline {
+    font: normal normal 900 25px/39px "Gilroy Extra-bold";
+    top: 39%;
+    left: 14%;
+    width: 85%;
+  }
+  .container .brand-tagline {
+    font: normal normal bold 18px/20px "Gilroy Semibold";
+    top: 50%;
+    left: 14%;
+  }
+  .measurement-container .heading-container {
+    width: 247px;
+  }
+  .measurement-container .heading-container .heading {
+    font: normal normal 900 30px/45px "Gilroy Semibold";
+  }
+  .measurement-container .grid-container .grid-item {
+    width: 100%;
+    height: 130px;
+    flex-direction: column;
+  }
+  .measurement-container .grid-container .grid-item .icon {
+    width: 45px;
+    height: 45px;
+  }
+  .measurement-container .grid-container .grid-item .text {
+    width: 100%;
+    font: normal normal 600 16px/25px "Gilroy Regular";
+    text-align: center;
   }
 }
